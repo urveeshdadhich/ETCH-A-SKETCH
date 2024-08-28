@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=ZCOOL+KuaiLe&display=swap');
+
+:root{
+    --main-width: 70vw;
+    --main-height: 90vh;
+    --canva-width: 500px;
+    --canva-height: 500px;
+}
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'ZCOOL KuaiLe', cursive;*/
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F2F2F2;
+}
+
+.container{
+    width: var(--main-width);
+    height: var(--main-height);
+}
+.title{
+    display: flex;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    justify-content: center;
+    font-size: 2em;
+}
+.title h1{
+    margin: .5em;
+    margin-right: 2px;
+    margin-top: .5rem;
+    color: #9865A6;
+}
+.title i{
+    margin: .5em;
+    margin-left: 2px;
+    margin-top: .5rem;
+    font-size: 3em;
+    align-self: center;
+    color:#91D9A3;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    min-width: 20vw;
+    min-height: 30rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.controls button{
+    width: 100%;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 4px;
+    transition: all 0.1s ease-in-out;
+    color: #262524;
+}
+
+input[type='number']{
+    width: 50%;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 4px;
+    background-color: transparent;
+}
+
+button:hover,
+input[type='color']:hover{
+    transform: scale(1.05);
+}
+
+input[type='color']{
+    -webkit-appearance: none ;
+    width: 80px;
+    height: 80px;
+    border: none;
+    transition: all 0.1s ease-in-out;
+    
+}
+input[type='color']::-webkit-color-swatch{
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 4px;
+}
+
+#rainbow{
+    background-color: #9C8BD9;
+}
+#grayScale{
+    background-color: #B3D9AD;
+}
+#eraser{
+    background-color: #F2B05E
+}
+.canvas{
+    min-width: var(--canva-width);
+    min-height: var(--canva-height);
+    background-color: #F2EDE4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

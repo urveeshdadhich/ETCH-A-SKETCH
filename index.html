@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8200729a2.js" crossorigin="anonymous"></script>
+    
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Etch a Sketch</h1>
+            <i class="fas fa-wind"></i>
+        </div>
+        <div class="content">
+            <div class="controls">
+                <input type="color" id="inputColor">
+                <button id="rainbow">Rainbow</button>
+                <button id="grayScale">Gray Scale</button>
+                <button id="eraser">Eraser</button>
+                <input type="number" name="inputNumbre" id="inputNumbre" value="25" min="0" max="100">
+
+            </div>
+            <div class="canvas" id="canvas">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
